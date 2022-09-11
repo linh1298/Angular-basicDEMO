@@ -1,0 +1,14 @@
+<div style="text-align: center;" *ngIf="hero!=null">
+
+    <h2> Hero Detail: </h2>
+    <div>
+        <span>id: </span>{{hero.id}}
+    </div>
+    <div>
+        <label for="hero-name">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name"><br/>
+        <button type="button" (click)="save()">Save</button>
+        <button type="button" (click)="goBack()">Back</button>
+    </div>
+
+</div>
